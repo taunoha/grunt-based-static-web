@@ -1,7 +1,7 @@
 {
-  "name": "static-html",
+  "name": "grunt-based-static-web",
   "version": "0.5.1",
-  "description": "Just a base for Static HTML/CSS prototype",
+  "description": "Just a simple package to create static website.",
   "devDependencies": {
     "grunt": "~0.4.2",
     "URIjs": "^1.13.2",
