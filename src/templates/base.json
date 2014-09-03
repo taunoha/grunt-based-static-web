@@ -1,0 +1,14 @@
+{
+    "title": "Gruntjs Based Static Web",
+    "author": "Tauno",
+    "lang" : "en",
+    "charset": "utf-8",
+    "mainnav": {
+        "mainnav-list": {
+            "mainnav-item": [
+                { "name": "Home", "url": "index.html" },
+                { "name": "Contact", "url": "contact.html" }
+            ]
+        }
+    }
+}

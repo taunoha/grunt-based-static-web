@@ -1,0 +1,19 @@
+{
+  "name": "static-html",
+  "version": "0.5.1",
+  "description": "Just a base for Static HTML/CSS prototype",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "URIjs": "^1.13.2",
+    "hogan.js": "^3.0.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-bower-concat": "~0.3.0",
+    "grunt-yui-compressor": "~0.3.3",
+    "grunt-sass": "~0.11.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.8.1",
+    "dbushell-grunt-mustatic": "latest",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-clean": "^0.5.0"
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="{{ author }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <link rel="stylesheet" id="oi-plugins"  href='{{ assets }}/gfx/plugins.min.css' type="text/css" media="screen" />
+    <link rel="stylesheet" id="oi-screen"  href='{{ assets }}/gfx/styles_screen.min.css' type="text/css" media="screen" />
+    <script type='text/javascript' src='{{ assets }}/js/plugins.min.js'></script>
+    <script type='text/javascript' src='{{ assets }}/js/app.min.js'></script>
+    <!--[if lt IE 9]>
+       <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+{{>content}}
+</div>
+</body>
+</html>

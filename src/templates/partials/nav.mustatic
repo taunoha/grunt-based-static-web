@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        {{#mainnav}}
+        <ul class="mainnav">
+            {{#mainnav-list}}
+            <ul class="mainnav-list">
+                {{#mainnav-item}}
+                <li class="mainnav-item">
+                        <a class="mainnav-url" href="{{url}}">{{name}}</a>
+                    </li>
+                {{/mainnav-item}}
+            </ul>
+            {{/mainnav-list}}
+        </ul>
+        {{/mainnav}}
+    </div>
+</div>

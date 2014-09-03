@@ -1,0 +1,11 @@
+{{>header}}
+<div class="row">
+    <div class="col-sm-4 col-md-4">
+        <p>Sidebar</p>
+    </div>
+    <div class="col-sm-8 col-md-4">
+        <h1>Hello, World!</h1>
+        <p>Jep, this is your contact page.</p>
+    </div>
+</div>
+{{>footer}}

@@ -1,0 +1,16 @@
+{
+  "name": "grunt-based-static-web",
+  "private": false,
+  "dependencies": {
+    "sass-bootstrap": "latest",
+    "owl.carousel": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build",
+    "test",
+    "tests"
+  ]
+}
