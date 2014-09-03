@@ -5,8 +5,8 @@ Just a simple package to create static website. It uses Gruntjs tasks to automat
 It uses SASS and Mustache template engine.
 
 ## In the box
-* Bootstrap 3.2.0
-* Modernizr 2.8.1 (customized)
+* Bootstrap
+* Modernizr (customized)
 * Owl Carousel
 
 ## Creator
