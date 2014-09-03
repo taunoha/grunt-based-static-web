@@ -137,7 +137,7 @@ module.exports = function(grunt) {
                 globals: {
                     lang    : 'en',
                     charset : 'utf-8',
-                    assets: 'http://localhost/static-html-temp/build/assets'
+                    assets: 'http://localhost/grunt-based-static-web/build/assets'
                 }
             }
         },
