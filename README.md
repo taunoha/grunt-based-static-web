@@ -32,7 +32,7 @@ When you start developing, use this command:
 ```shell
 grunt html
 ```
-It will look for changed files and create CSS, JS and HTML-s automatically.
+It will look for changed files (*.scss, *.js, *.mustatic) and create HTML-s automatically.
 
 ## Creator
 
