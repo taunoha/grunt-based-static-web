@@ -1,8 +1,10 @@
 grunt-based-static-web
 ================
 
-Just a simple package to create static website. It uses Gruntjs tasks to automate required tasks to create static HTML.
-It uses SASS and Mustache template engine. In the package are incloded also:
+Just a simple software to create static website. It uses Gruntjs tasks to create static HTML automatically.
+It uses SASS and Mustache template engine.
+
+It also includes:
 * grunt-contrib-jshint
 * grunt-yui-compressor
 * grunt-contrib-imagemin
