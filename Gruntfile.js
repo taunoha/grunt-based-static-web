@@ -35,22 +35,6 @@ module.exports = function(grunt) {
             }
         },
 
-        // SASS
-        sass: {
-            dist: {
-                options: {
-                    outputStyle: 'compressed',
-                    sourceComments: 'none'
-                },
-                files: [
-                    {
-                        src: 'src/assets/gfx/styles_screen.scss',
-                        dest: 'build/assets/gfx/styles_screen.min.css'
-                    },
-                ]
-            }
-        },
-
         // Concat
         concat: {
             js: {
@@ -101,27 +85,19 @@ module.exports = function(grunt) {
             }
         },
 
-        // Watch
-        watch: {
-            html: {
-                files: ['src/templates/**/*.mustatic'],
-                tasks: ['jshint', 'clean', 'mustatic']
-            },
-            sass: {
-                files: ['src/assets/gfx/styles_screen.scss'],
-                tasks: ['sass']
-            },
-            css: {
-                files: ['src/assets/gfx/styles_screen.css'],
-                tasks: ['cssmin:styles']
-            },
-            js: {
-                files: ['src/assets/js/app.js'],
-                tasks: ['min:js']
-            },
-            images: {
-                files: ['src/assets/gfx/*.{gif,GIF,jpg,JPG,png,PNG}'],
-                tasks: ['imagemin']
+        // SASS
+        sass: {
+            dist: {
+                options: {
+                    outputStyle: 'compressed',
+                    sourceComments: 'none'
+                },
+                files: [
+                    {
+                        src: 'src/assets/gfx/styles_screen.scss',
+                        dest: 'build/assets/gfx/styles_screen.min.css'
+                    },
+                ]
             }
         },
 
@@ -156,6 +132,30 @@ module.exports = function(grunt) {
         // Clean
         clean: {
             build: ['build/**/*.html']
+        },
+
+        // Watch
+        watch: {
+            html: {
+                files: ['src/templates/**/*.mustatic'],
+                tasks: ['jshint', 'clean', 'mustatic']
+            },
+            sass: {
+                files: ['src/assets/gfx/styles_screen.scss'],
+                tasks: ['sass']
+            },
+            css: {
+                files: ['src/assets/gfx/styles_screen.css'],
+                tasks: ['cssmin:styles']
+            },
+            js: {
+                files: ['src/assets/js/app.js'],
+                tasks: ['min:js']
+            },
+            images: {
+                files: ['src/assets/gfx/*.{gif,GIF,jpg,JPG,png,PNG}'],
+                tasks: ['imagemin']
+            }
         }
 
     });
