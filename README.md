@@ -2,7 +2,10 @@ grunt-based-static-web
 ================
 
 Just a simple package to create static website. It uses Gruntjs tasks to automate required tasks to create static HTML.
-It uses SASS and Mustache template engine.
+It uses SASS and Mustache template engine. In the package are incloded also:
+* grunt-contrib-jshint
+* grunt-yui-compressor
+* grunt-contrib-imagemin
 
 ## In the box
 * Bootstrap
@@ -10,7 +13,7 @@ It uses SASS and Mustache template engine.
 * Owl Carousel
 
 ## Setup
-*This plugin requires Grunt `0.4.2`
+*This software requires Grunt `0.4.2`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may start using this software with this command:
 
@@ -23,7 +26,7 @@ bower update
 ```shell
 grunt build
 ```
-If you start developing, use this command:
+When you start developing, use this command:
 ```shell
 grunt html
 ```
