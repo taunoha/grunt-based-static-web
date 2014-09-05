@@ -1,6 +1,6 @@
 {
   "name": "grunt-based-static-web",
-  "private": false,
+  "private": true,
   "dependencies": {
     "sass-bootstrap": "latest",
     "owl.carousel": "latest"
