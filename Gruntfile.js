@@ -118,6 +118,17 @@ module.exports = function(grunt) {
             }
         },
 
+        // Prettify
+        prettify: {
+            all: {
+                expand: true,
+                cwd: 'build/',
+                ext: '.html',
+                src: ['*.html'],
+                dest: 'build/'
+            },
+        },
+
         // jshint
         jshint: {
             all: [
@@ -171,10 +182,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('dbushell-grunt-mustatic');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-prettify');
 
     // Tasks
 
     grunt.registerTask('html', ['watch']);
-    grunt.registerTask('build', ['bower_concat', 'concat', 'sass', 'min:dist', 'imagemin', 'jshint', 'clean', 'mustatic']);
+    grunt.registerTask('build', ['bower_concat', 'concat', 'sass', 'min:dist', 'imagemin', 'jshint', 'clean', 'mustatic', 'prettify']);
 
 };

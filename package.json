@@ -14,6 +14,13 @@
     "grunt-contrib-imagemin": "~0.8.1",
     "dbushell-grunt-mustatic": "latest",
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-clean": "^0.5.0"
-  }
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-prettify": "latest"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "web",
+    "bootstrap"
+  ]
 }
