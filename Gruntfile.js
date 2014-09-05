@@ -149,7 +149,7 @@ module.exports = function(grunt) {
         watch: {
             html: {
                 files: ['src/templates/**/*.mustatic'],
-                tasks: ['jshint', 'clean', 'mustatic']
+                tasks: ['jshint', 'clean', 'mustatic', 'prettify']
             },
             sass: {
                 files: ['src/assets/gfx/styles_screen.scss'],
