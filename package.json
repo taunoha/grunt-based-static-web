@@ -21,6 +21,7 @@
     "static",
     "website",
     "web",
-    "bootstrap"
+    "bootstrap",
+    "generator"
   ]
 }
