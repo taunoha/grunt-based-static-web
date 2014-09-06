@@ -15,7 +15,8 @@
     "dbushell-grunt-mustatic": "latest",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-clean": "^0.5.0",
-    "grunt-prettify": "latest"
+    "grunt-prettify": "latest",
+    "grunt-contrib-connect": "~0.7.1"
   },
   "keywords": [
     "static",

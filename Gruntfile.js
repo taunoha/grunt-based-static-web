@@ -97,6 +97,10 @@ module.exports = function(grunt) {
                         src: 'src/assets/gfx/styles_screen.scss',
                         dest: 'build/assets/gfx/styles_screen.min.css'
                     },
+                    {
+                        src: 'src/assets/gfx/bootstrap.scss',
+                        dest: 'build/assets/gfx/bootstrap.min.css'
+                    },
                 ]
             }
         },
@@ -113,7 +117,7 @@ module.exports = function(grunt) {
                 globals: {
                     lang    : 'en',
                     charset : 'utf-8',
-                    assets: 'http://localhost/grunt-based-static-web/build/assets'
+                    assets: 'http://localhost:<%= connect.options.port %>/assets'
                 }
             }
         },
@@ -149,23 +153,60 @@ module.exports = function(grunt) {
         watch: {
             html: {
                 files: ['src/templates/**/*.mustatic'],
-                tasks: ['jshint', 'clean', 'mustatic', 'prettify']
+                tasks: ['jshint', 'mustatic', 'prettify'],
+                options: {
+                    livereload: true
+                }
             },
             sass: {
                 files: ['src/assets/gfx/styles_screen.scss'],
-                tasks: ['sass']
-            },
-            css: {
-                files: ['src/assets/gfx/styles_screen.css'],
-                tasks: ['cssmin:styles']
+                tasks: ['sass'],
+                options: {
+                    livereload: true
+                }
             },
             js: {
                 files: ['src/assets/js/app.js'],
-                tasks: ['min:js']
+                tasks: ['min:js'],
+                options: {
+                    livereload: true
+                }
             },
             images: {
                 files: ['src/assets/gfx/*.{gif,GIF,jpg,JPG,png,PNG}'],
-                tasks: ['imagemin']
+                tasks: ['imagemin'],
+                options: {
+                    livereload: true
+                }
+            },
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    'build/*.html',
+                    'build/assets/gfx/*.css',
+                    'build/assets/gfx/*.{gif,jpeg,jpg,png,svg}',
+                ]
+            }
+        },
+
+        // Connect. Opens the default browser. Reloads application automatically (according to Watch task rules)
+        connect: {
+            options: {
+                port: 9000,
+                hostname: 'localhost',
+                base: 'build'
+            },
+            livereload: {
+                options: {
+                    open: true
+                }
+            }
+        },
+        open: {
+            server: {
+                url: 'http://localhost:<%= connect.options.port %>'
             }
         }
 
@@ -183,10 +224,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-prettify');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // Tasks
 
-    grunt.registerTask('html', ['watch']);
+    grunt.registerTask('html', ['connect:livereload', 'watch']);
     grunt.registerTask('build', ['bower_concat', 'concat', 'sass', 'min:dist', 'imagemin', 'jshint', 'clean', 'mustatic', 'prettify']);
 
 };

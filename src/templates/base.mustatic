@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }}</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-    <link rel="stylesheet" id="oi-plugins"  href='{{ assets }}/gfx/plugins.min.css' type="text/css" media="screen" />
+    <link rel="stylesheet" id="oi-plugins"  href='{{ assets }}/gfx/bootstrap.min.css' type="text/css" media="screen" />
     <link rel="stylesheet" id="oi-screen"  href='{{ assets }}/gfx/styles_screen.min.css' type="text/css" media="screen" />
     <script type='text/javascript' src='{{ assets }}/js/plugins.min.js'></script>
     <script type='text/javascript' src='{{ assets }}/js/app.min.js'></script>
@@ -18,5 +18,8 @@
 <div class="container">
 {{>content}}
 </div>
+<!-- For Dev only. Remove it in production. -->
+<script src="http://localhost:35729/livereload.js"></script>
+<!-- // For Dev only -->
 </body>
 </html>
