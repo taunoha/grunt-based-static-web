@@ -8,6 +8,8 @@ It also includes:
 * grunt-contrib-jshint
 * grunt-yui-compressor
 * grunt-contrib-imagemin
+* grunt-prettify
+* grunt-contrib-connect
 
 ## In the box
 * Bootstrap
@@ -32,7 +34,11 @@ When you start developing, use this command:
 ```shell
 grunt html
 ```
-It will look for changed files (*.scss, *.js, *.mustatic) and will create HTML automatically.
+It will:
+*start the server
+*open the website in your default browser
+*look for changed files (*.scss, *.js, *.mustatic)
+*reload your default browser automatically when all tasks have been completed
 
 ## Creator
 

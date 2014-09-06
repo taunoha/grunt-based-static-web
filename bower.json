@@ -2,7 +2,8 @@
   "name": "grunt-based-static-web",
   "private": true,
   "dependencies": {
-    "sass-bootstrap": "latest",
+    "jquery-legacy": "jquery#^1",
+    "bootstrap-sass": "latest",
     "owl.carousel": "latest"
   },
   "ignore": [

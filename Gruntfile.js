@@ -26,8 +26,8 @@ module.exports = function(grunt) {
                     'modernizr'
                 ],
                 dependencies: {
-                    'sass-bootstrap': 'jquery',
-                    'owl.carousel': 'jquery',
+                    'sass-bootstrap': 'jquery-legacy',
+                    'owl.carousel': 'jquery-legacy',
                 },
                 bowerOptions: {
                     relative: false
