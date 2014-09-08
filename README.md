@@ -1,8 +1,8 @@
 grunt-based-static-web
 ================
 
-Just a simple software to create static website. It uses Gruntjs tasks to create static HTML automatically.
-It uses SASS and Mustache template engine.
+Just a simple static site generator. It uses Gruntjs tasks to create static HTML automatically.
+It uses SASS and Mustache template engine. 
 
 It also includes:
 * grunt-contrib-jshint
