@@ -1,5 +1,6 @@
 grunt-based-static-web
 ================
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Just a simple static site generator. It uses Gruntjs tasks to create static HTML automatically.
 It uses SASS and Mustache template engine. 
