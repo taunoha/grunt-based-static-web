@@ -35,7 +35,7 @@ When you start developing, use this command:
 grunt html
 ```
 **It will**:
-start the server; open the website in your default browser; look for changed files (*.scss, *.js, *.mustatic); reload your default browser automatically when all tasks have been completed
+start the server; open the website in your default browser; look for changed files (*.scss, *.js, *.mustatic); reload your default browser automatically when all tasks have been completed.
 
 ## Creator
 
