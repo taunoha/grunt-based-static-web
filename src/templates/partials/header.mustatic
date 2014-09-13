@@ -1,1 +1,8 @@
-{{>nav}}
+<div class="row section main-header-helper">
+    <div class="col-md-12">
+        <div class="main-header">
+            <h1 class="main-header__logo"><a href="index.html">Static Page</a></h1>
+            {{>nav}}
+        </div>
+    </div>
+</div>

@@ -1,11 +1,40 @@
 {{>header}}
-<div class="row">
-    <div class="col-sm-4 col-md-4">
-        <p>Sidebar</p>
-    </div>
-    <div class="col-sm-8 col-md-4">
-        <h1>Hello, World!</h1>
-        <p>Yap, this is your contact page.</p>
+
+<div class="row section">
+    <div class="col-md-12">
+        <div class="owl-carousel-section">
+            <div class="owl-carousel">
+                <div class="item"><img src="http://lorempixel.com/1170/312/nature/1/" width="1170" height="312" alt="" /></div>
+                <div class="item"><img src="http://lorempixel.com/1170/312/nature/2/" width="1170" height="312" alt="" /></div>
+                <div class="item"><img src="http://lorempixel.com/1170/312/nature/3/" width="1170" height="312" alt="" /></div>
+                <div class="item"><img src="http://lorempixel.com/1170/312/nature/4/" width="1170" height="312" alt="" /></div>
+            </div>
+        </div>
     </div>
 </div>
+
+<div class="row section">
+  <h2 class="sr-only">Portfolio excerpt</h2>
+  <ul class="list-unstyled excerpts clearfix">
+      <li class="col-sm-4 col-md-4">
+          <div class="excerpts__block">
+              <h3 class="excerpts__title">First Col</h3>
+              <p class="excerpts__content">Lorem ipsum</p>
+          </div>
+      </li>
+      <li class="col-sm-4 col-md-4">
+          <div class="excerpts__block">
+              <h3 class="excerpts__title">First Col</h3>
+              <p class="excerpts__content">Lorem ipsum</p>
+          </div>
+      </li>
+      <li class="col-sm-4 col-md-4">
+          <div class="excerpts__block">
+              <h3 class="excerpts__title">First Col</h3>
+              <p class="excerpts__content">Lorem ipsum</p>
+          </div>
+      </li>
+  </ul>
+</div>
+
 {{>footer}}

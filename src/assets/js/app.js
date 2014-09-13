@@ -1,3 +1,11 @@
 jQuery(function($) {
-    console.log('app.js is loaded');
+
+    "use strict";
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 1
+    })
+
 });

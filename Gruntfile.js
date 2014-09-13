@@ -96,10 +96,35 @@ module.exports = function(grunt) {
                     {
                         src: 'src/assets/gfx/styles_screen.scss',
                         dest: 'build/assets/gfx/styles_screen.min.css'
+                    }
+                ]
+            }
+        },
+
+        // Copy
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-sass/lib/',
+                        src: ['*'],
+                        dest: 'src/assets/gfx/bootstrap-sass/lib',
+                        filter: 'isFile'
                     },
                     {
-                        src: 'src/assets/gfx/bootstrap.scss',
-                        dest: 'build/assets/gfx/bootstrap.min.css'
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-sass/fonts/',
+                        src: ['*'],
+                        dest: 'src/assets/gfx/bootstrap-sass/fonts/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/owl.carousel/dist/assets/',
+                        src: ['owl.carousel.min.css'],
+                        dest: 'build/assets/gfx/owl.carousel/',
+                        filter: 'isFile'
                     },
                 ]
             }
@@ -111,7 +136,7 @@ module.exports = function(grunt) {
                 src: 'src/templates',
                 dest: 'build',
                 ext: 'mustatic',
-                navStates : true
+                navStates: true
             },
             build: {
                 globals: {
@@ -222,6 +247,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('dbushell-grunt-mustatic');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('grunt-contrib-connect');
@@ -229,6 +255,6 @@ module.exports = function(grunt) {
     // Tasks
 
     grunt.registerTask('html', ['connect:livereload', 'watch']);
-    grunt.registerTask('build', ['bower_concat', 'concat', 'sass', 'min:dist', 'imagemin', 'jshint', 'clean', 'mustatic', 'prettify']);
+    grunt.registerTask('build', ['bower_concat', 'copy', 'concat', 'sass', 'min:dist', 'imagemin', 'jshint', 'clean', 'mustatic', 'prettify']);
 
 };
