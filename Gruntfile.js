@@ -149,13 +149,16 @@ module.exports = function(grunt) {
 
         // Prettify
         prettify: {
+            options: {
+                indent: 4
+            },
             all: {
                 expand: true,
                 cwd: 'build/',
                 ext: '.html',
                 src: ['*.html'],
                 dest: 'build/'
-            },
+            }
         },
 
         // jshint
