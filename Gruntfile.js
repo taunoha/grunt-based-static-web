@@ -26,8 +26,8 @@ module.exports = function(grunt) {
                     'modernizr'
                 ],
                 dependencies: {
-                    'sass-bootstrap': 'jquery-legacy',
-                    'owl.carousel': 'jquery-legacy',
+                    'sass-bootstrap': 'jquery',
+                    'owl.carousel': 'jquery',
                 },
                 bowerOptions: {
                     relative: false
@@ -150,7 +150,8 @@ module.exports = function(grunt) {
         // Prettify
         prettify: {
             options: {
-                indent: 4
+                indent: 4,
+                brace_style: 'end-expand'
             },
             all: {
                 expand: true,
